@@ -9,7 +9,7 @@ export default function Home() {
 
   let dispatch = useDispatch();
   let navesEstado = useSelector((state) => state.naves);
-  console.log(navesEstado);
+  
   useEffect(() => {
     dispatch(TRAER_NAVES());
   }, [dispatch]);
@@ -39,17 +39,7 @@ export default function Home() {
             )}
             )
         }
-
-
-        
       </div>
-
-
-
-      
-
-      
-
     </div>
   )
 }
